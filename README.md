@@ -4,7 +4,7 @@ Curso C
 
 # Conteúdo
 
-* Introdução à linguagem C e à programação em geral
+* [Introdução à linguagem C e à programação em geral](intro)
 * Tipos de dados e variáveis em C
 * Entrada e saída de dados em C
 * Operadores em C
