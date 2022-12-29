@@ -132,9 +132,11 @@ int main() {
   return 0;
 }
 ```
-%[^\n] usaria todos os caracteres em uma única linha como entrada. Você deve saber que, sempre que pressionamos Enter no teclado, o caractere “\n” é escrito no console. Aqui, “^” significa até e “\n” significa nova linha e, finalmente, [^\n] significa receber entrada até a nova linha.
-
+%[^\n] usaria todos os caracteres em uma única linha como entrada. Você deve saber que, sempre que pressionamos Enter no teclado, o caractere “\n” é escrito no console. Aqui, “^” significa até que, ou até encontrar, e “\n” significa nova linha (ou a tecla Enter) e, finalmente, [^\n] significa receber entrada até a nova linha.
 
 O scanf suporta na sua formatação algo similar a uma expressão regular, alguns exemplos de utilização:
-
+* %[^5]: Para ler os caracteres até encontrar um 5, exemplo "abcd5efg", só será lido "abcd";
+* %[0–9]: Lê apenas os símbolos numéricos, exemplo "123asd456", só será lido "123";
+* %[a–z]: Irá ler apenas as letras minúsculas, exemplo "abcABC", será lido "abc";
+* %[123]: Qualquer combinação initerrupta de 1, 2 e 3 será lida, exemplo "123321123456", será lido "123321123".
 
