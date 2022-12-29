@@ -43,7 +43,7 @@ int main() {
 }
 ```
 
-# O scanf
+# Entrada: O scanf
 
 A função **scanf** é uma das funções padrão da biblioteca de entrada e saída de dados (stdio.h) em C que permite ler dados de um fluxo de entrada, como o teclado ou um arquivo. Ela tem a seguinte sintaxe:
 ```c
