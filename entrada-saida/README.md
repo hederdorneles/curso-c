@@ -140,3 +140,27 @@ O scanf suporta na sua formatação algo similar a uma expressão regular, algun
 * %[a–z]: Irá ler apenas as letras minúsculas, exemplo "abcABC", será lido "abc";
 * %[123]: Qualquer combinação initerrupta de 1, 2 e 3 será lida, exemplo "123321123456", será lido "123321123".
 
+## Valor de retorno do scanf
+
+A função **scanf** retorna o número de itens lidos com sucesso. Isso significa que, se a função conseguir ler todos os itens especificados na string de formato, ela retornará o número de itens lidos. Se a função encontrar o final do arquivo (EOF) ou um erro de leitura, ela retornará EOF.
+
+Por exemplo, se você usar a função **scanf** para ler três valores inteiros da entrada padrão, a função retornará 3 se conseguir ler todos os valores com sucesso, ou EOF se encontrar o final do arquivo ou um erro de leitura:
+```c
+#include <stdio.h>
+
+int main() {
+  int a, b, c;
+  int ret;
+
+  ret = scanf("%d%d%d", &a, &b, &c);
+  if (ret == 3) {
+    printf("Voce digitou os valores %d %d %d\n", a, b, c);
+  } else if (ret == EOF) {
+    printf("Erro de leitura ou fim do arquivo\n");
+  } else {
+    printf("Foram lidos apenas %d valores\n", ret);
+  }
+
+  return 0;
+}
+```
