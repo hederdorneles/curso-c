@@ -53,7 +53,7 @@ O parâmetro format é uma string de formato que especifica o tipo de dados que 
 * **%d**: lê um número inteiro.
 * **%f**: lê um número ponto flutuante (decimal).
 * **%c**: lê um caractere.
-* **%s*: lê uma string de caracteres.
+* **%s**: lê uma string de caracteres.
 
 Os demais parâmetros da função scanf são endereços de variáveis onde os dados lidos devem ser armazenados. Cada especificador de formato na string de formato deve ser seguido por um endereço de variável do tipo apropriado. Por exemplo:
 ```c
