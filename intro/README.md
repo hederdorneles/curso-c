@@ -1,6 +1,6 @@
 # Intodução
 
-A linguagem C é uma linguagem de programação de baixo nível que foi criada na década de 1970 para ser usada em sistemas operacionais e outros sistemas de baixo nível. Ela é conhecida por ser uma linguagem eficiente e versátil, sendo amplamente usada em muitos campos diferentes, como sistemas operacionais, jogos, aplicativos de desktop e dispositivos embarcados.
+A linguagem C é uma linguagem de programação de nível relativamente baixo que foi criada na década de 1970 para ser usada em sistemas operacionais e outros sistemas de baixo nível. Ela é conhecida por ser uma linguagem eficiente e versátil, sendo amplamente usada em muitos campos diferentes, como sistemas operacionais, jogos, aplicativos de desktop e dispositivos embarcados.
 
 A programação em geral é o ato de escrever código para que um computador execute tarefas específicas. Isso envolve a criação de algoritmos, que são conjuntos de passos para resolver um problema ou realizar uma tarefa. A programação é uma habilidade importante para muitos campos, pois permite que você crie software e sistemas complexos para resolver problemas reais.
 
