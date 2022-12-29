@@ -6,7 +6,7 @@ Curso C
 
 * [Introdução à linguagem C e à programação em geral](intro)
 * [Tipos de dados e variáveis em C](tipos-dados-var)
-* Entrada e saída de dados em C
+* [Entrada e saída de dados em C](entrada-saida)
 * Operadores em C
 * Estruturas de controle de fluxo (if, for, while)
 * Funções em C
