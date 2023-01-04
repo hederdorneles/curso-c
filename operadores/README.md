@@ -110,9 +110,10 @@ O operador ponto e vírgula também é usado para terminar outras instruções e
 A vírgula é usada como um operador binário em C para separar duas expressões. Quando usada em uma estrutura de controle de fluxo, como o laço while, a vírgula é avaliada como uma expressão que retorna o valor da última expressão da sequência.
 
 Por exemplo, o seguinte código não fará nada, pois a expressão após a vírgula é avaliada primeiro e o resultado é sempre o valor de j < 2, que é falso:
+```c
 int i = 15, j = 1;
 while (i > 10, j < 2) {
   printf("Looping...\n");
 }
-
+```
 Em geral, o uso da vírgula como um operador de separação de expressões é considerado um mau estilo de programação em C, pois pode ser confuso e difícil de ler. É melhor usar a vírgula apenas para separar elementos em uma lista de inicialização ou argumentos em uma chamada de função.
