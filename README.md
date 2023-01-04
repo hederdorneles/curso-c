@@ -1,13 +1,14 @@
 # curso-c
 Curso C
 
+em construção
 
 # Conteúdo
 
 * [Introdução à linguagem C e à programação em geral](intro)
 * [Tipos de dados e variáveis em C](tipos-dados-var)
 * [Entrada e saída de dados em C](entrada-saida)
-* Operadores em C
+* [Operadores em C](operadores)
 * Estruturas de controle de fluxo (if, for, while)
 * Funções em C
 * Vetores e matrizes em C
