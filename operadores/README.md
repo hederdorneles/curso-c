@@ -86,3 +86,33 @@ int x = p1.x;    // x = 1
 int y = p2->y;   // y = 2 (acessa o campo y através do ponteiro p2)
 ```
 
+## Operador vírgula
+
+O operador vírgula (,) é um operador binário em C que é usado para separar duas expressões. Já o operador ponto e vírgula (;) é usado para terminar uma instrução em C.
+
+Por exemplo, o seguinte código imprime os números de 1 a 10:
+```c
+#include <stdio.h>
+
+int main() {
+  int i;
+  for (i = 0; i < 10; i++) {
+    printf("%d\n", i + 1);
+  }
+  return 0;
+}
+```
+
+No laço for, o operador ponto e vírgula é usado para separar as três expressões que são avaliadas a cada iteração do laço: a expressão de inicialização (i = 0), a expressão de condição de saída (i < 10) e a expressão de incremento (i++).
+
+O operador ponto e vírgula também é usado para terminar outras instruções em C, como declarações de variáveis ou chamadas de função.
+
+A vírgula é usada como um operador binário em C para separar duas expressões. Quando usada em uma estrutura de controle de fluxo, como o laço while, a vírgula é avaliada como uma expressão que retorna o valor da última expressão da sequência.
+
+Por exemplo, o seguinte código não fará nada, pois a expressão após a vírgula é avaliada primeiro e o resultado é sempre o valor de j < 2, que é falso:
+int i = 15, j = 1;
+while (i > 10, j < 2) {
+  printf("Looping...\n");
+}
+
+Em geral, o uso da vírgula como um operador de separação de expressões é considerado um mau estilo de programação em C, pois pode ser confuso e difícil de ler. É melhor usar a vírgula apenas para separar elementos em uma lista de inicialização ou argumentos em uma chamada de função.
