@@ -117,3 +117,35 @@ while (i > 10, j < 2) {
 }
 ```
 Em geral, o uso da vírgula como um operador de separação de expressões é considerado um mau estilo de programação em C, pois pode ser confuso e difícil de ler. É melhor usar a vírgula apenas para separar elementos em uma lista de inicialização ou argumentos em uma chamada de função.
+
+O operador ponto (.) é um operador de acesso de membro em C, usado para acessar campos ou métodos de um struct ou union. Por exemplo:
+```c
+struct ponto {
+  int x;
+  int y;
+};
+
+struct ponto p1;
+p1.x = 10;
+p1.y = 20;
+
+printf("(%d, %d)\n", p1.x, p1.y);  // imprime "(10, 20)"
+```
+
+O operador ponto também é usado para acessar campos de uma union, que é um tipo de dado que permite armazenar diferentes tipos de dados em uma única variável. Por exemplo:
+```c
+union valor {
+  int i;
+  float f;
+  char c;
+};
+
+union valor v;
+v.i = 10;
+printf("%d\n", v.i);  // imprime 10
+v.f = 3.14;
+printf("%f\n", v.f);  // imprime 3.14
+v.c = 'A';
+printf("%c\n", v.c);  // imprime 'A'
+```
+
