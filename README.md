@@ -13,7 +13,7 @@ em construção
 * [Tipos de dados e variáveis em C](tipos-dados-var)
 * [Entrada e saída de dados em C](entrada-saida)
 * [Operadores em C](operadores)
-* Estruturas de controle de fluxo (if, for, while)
+* [Estruturas de controle de fluxo (if, for, while)](controle-fluxo)
 * Funções em C
 * Vetores e matrizes em C
 * Ponteiros em C
