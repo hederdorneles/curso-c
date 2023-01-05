@@ -1,3 +1,5 @@
+# Vetores e Matrizes
+
 Os vetores e matrizes são estruturas de dados comuns em C que permitem armazenar e manipular conjuntos de dados de forma eficiente. Aqui estão algumas informações básicas sobre como trabalhar com essas estruturas em C:
 
 * Vetores: um vetor é um conjunto de elementos do mesmo tipo, armazenados em sequência na memória. Para criar um vetor em C, é preciso especificar o tipo de dados dos elementos e o tamanho do vetor. Por exemplo:
