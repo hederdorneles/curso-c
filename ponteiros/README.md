@@ -1,3 +1,5 @@
+# Ponteiros
+
 Os ponteiros em C são variáveis que armazenam endereços de outras variáveis. Eles são muito úteis para manipular dados em memória de maneira dinâmica, além de oferecer outras possibilidades, como passagem de argumentos por referência e criação de estruturas de dados complexas.
 
 A sintaxe para declarar um ponteiro em C é semelhante à sintaxe para declarar outras variáveis, mas inclui um asterisco (*) antes do nome da variável. O tipo do ponteiro deve ser especificado antes do nome da variável. Por exemplo:
