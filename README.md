@@ -14,7 +14,7 @@ em construção
 * [Entrada e saída de dados em C](entrada-saida)
 * [Operadores em C](operadores)
 * [Estruturas de controle de fluxo (if, for, while)](controle-fluxo)
-* Funções em C
+* [Funções em C](funcoes)
 * Vetores e matrizes em C
 * Ponteiros em C
 * Alocação dinâmica de memória em C
