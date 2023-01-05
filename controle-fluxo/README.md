@@ -79,7 +79,7 @@ No exemplo acima, apenas os números ímpares de 1 a 9 são impressos, pois a it
 
 O comando continue é útil quando você quer pular algumas iterações de um laço sem precisar usar um if dentro do laço. No entanto, é importante tomar cuidado ao usar o continue, pois ele pode tornar o código mais difícil de ler e entender.
 
-# Operador ternário
+## Operador ternário
 
 O operador ternário é um operador condicional em C que permite avaliar uma expressão e, de acordo com o resultado, retornar um valor ou outro. Ele é escrito como expressão ? valor1 : valor2.
 
