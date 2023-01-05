@@ -1,3 +1,5 @@
+# Estruturas de controle de fluxo
+
 As estruturas de controle de fluxo são usadas em C para controlar a execução do código de acordo com certas condições. Aqui estão alguns exemplos de estruturas de controle de fluxo comuns em C:
 * if: a estrutura if permite que você execute um trecho de código apenas se uma determinada condição for verdadeira. Por exemplo:
 ```c
@@ -77,4 +79,17 @@ No exemplo acima, apenas os números ímpares de 1 a 9 são impressos, pois a it
 
 O comando continue é útil quando você quer pular algumas iterações de um laço sem precisar usar um if dentro do laço. No entanto, é importante tomar cuidado ao usar o continue, pois ele pode tornar o código mais difícil de ler e entender.
 
+# Operador ternário
 
+O operador ternário é um operador condicional em C que permite avaliar uma expressão e, de acordo com o resultado, retornar um valor ou outro. Ele é escrito como expressão ? valor1 : valor2.
+
+Se a expressão for verdadeira, o operador ternário retorna valor1. Se a expressão for falsa, ele retorna valor2. Por exemplo:
+```c
+int a = 5, b = 10;
+int maior = (a > b) ? a : b;
+printf("%d\n", maior);  // imprime 10
+```
+
+No exemplo acima, a variável maior recebe o valor de b, pois a expressão a > b é falsa.
+
+O operador ternário é útil para escrever código mais conciso e legível, evitando o uso de estruturas de controle de fluxo como o if/else.
