@@ -93,3 +93,34 @@ printf("%d\n", maior);  // imprime 10
 No exemplo acima, a variável maior recebe o valor de b, pois a expressão a > b é falsa.
 
 O operador ternário é útil para escrever código mais conciso e legível, evitando o uso de estruturas de controle de fluxo como o if/else.
+
+# Laços de repetição
+
+Os laços de repetição são estruturas de controle de fluxo em C que permitem que um trecho de código seja executado várias vezes, de acordo com uma determinada condição. Aqui estão os principais tipos de laços de repetição em C:
+
+* for: o laço for é usado para executar um trecho de código várias vezes, com um contador que é incrementado ou decrementado a cada iteração. Por exemplo:
+```c
+for (int i = 0; i < 10; i++) {
+  printf("%d\n", i + 1);
+}
+```
+
+* while: o laço while é usado para executar um trecho de código enquanto uma determinada condição for verdadeira. Por exemplo:
+```c
+int i = 0;
+while (i < 10) {
+  printf("%d\n", i + 1);
+  i++;
+}
+```
+
+* do/while: o laço do/while é semelhante ao while, mas a condição é avaliada no final da iteração, o que garante que o trecho de código será executado pelo menos uma vez. Por exemplo:
+```c
+int i = 0;
+do {
+  printf("%d\n", i + 1);
+  i++;
+} while (i < 10);
+```
+
+Esses são os principais tipos de laços de repetição em C. Cada um deles tem suas próprias características e usos, e é importante escolher o laço mais adequado para cada situação.
