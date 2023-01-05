@@ -16,7 +16,7 @@ em construção
 * [Estruturas de controle de fluxo (if, for, while)](controle-fluxo)
 * [Funções em C](funcoes)
 * [Vetores e matrizes em C](vetores-matrizes)
-* [Ponteiros em C](Ponteiros)
+* [Ponteiros em C](ponteiros)
 * Alocação dinâmica de memória em C
 * Arquivos em C
 * Structs e unions em C
