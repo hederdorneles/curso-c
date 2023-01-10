@@ -1,3 +1,5 @@
+# Arquivos em C
+
 A linguagem C fornece uma biblioteca padrão, __stdio.h__, para lidar com arquivos. Ela inclui várias funções que permitem abrir, ler, escrever e fechar arquivos.
 
 Para abrir um arquivo, você pode usar a função __fopen()__, que recebe como argumentos o nome do arquivo e o modo de abertura. O modo de abertura pode ser "r" para abrir um arquivo para leitura, "w" para abrir um arquivo para escrita (se o arquivo já existir, ele será sobrescrito) e "a" para abrir um arquivo para escrita (se o arquivo já existir, as novas informações serão adicionadas ao final do arquivo).
