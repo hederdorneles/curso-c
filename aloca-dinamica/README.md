@@ -26,6 +26,24 @@ int main() {
 }
 ```
 
+Exemplo de uso do __calloc__:
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p, i;
+    p = (int*) calloc(5, sizeof(int));
+
+    for (i = 0; i < 5; i++) {
+        printf("%d ", p[i]); 
+    }
+    free(p);
+    return 0;
+}
+```
+
+
 É importante liberar a memória alocada dinamicamente quando ela não for mais necessária, usando a função __free(p)__. Não fazê-lo pode causar vazamentos de memória e comprometer o desempenho do sistema.
 
 É importante lembrar que qualquer memória alocada dinamicamente deve ser liberada e fazer uso de variáveis ponteiros para guardar essas alocações é um boa prática.
