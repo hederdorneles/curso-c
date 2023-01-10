@@ -28,6 +28,11 @@ int main() {
 
 Exemplo de uso do __calloc__:
 ```c
+/*
+ Esse exemplo aloca memória para armazenar 5 inteiros e 
+ inicializa cada elemento com zero, em seguida imprime 
+ o valor de cada elemento e libera a memória alocada.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
