@@ -18,7 +18,7 @@ em construção
 * [Vetores e matrizes em C](vetores-matrizes)
 * [Ponteiros em C](ponteiros)
 * [Alocação dinâmica de memória em C](aloca-dinamica)
-* Arquivos em C
+* [Arquivos em C](arquivos)
 * Structs e unions em C
 * Programação orientada a objetos em C (usando structs e funções)
 * Bibliotecas em C (criando e usando bibliotecas dinâmicas ou estáticas)
