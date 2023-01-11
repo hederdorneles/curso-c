@@ -1,3 +1,5 @@
+# Funções
+
 As funções em C provêm uma maneira conveniente para encapsular alguma rotina, que pode ser usada sem a necessidade de refazer sua programação.
 
 As funções são um elemento fundamental da linguagem C, pois permitem dividir o código em pedaços mais gerenciáveis e reutilizáveis. Aqui estão algumas informações básicas sobre como criar e usar funções em C:
