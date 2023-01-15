@@ -18,7 +18,7 @@ p1.x = 3;
 p1.y = 4;
 ```
 
-Aqui está um exemplo de como definir e usar uma union em C: [código completo](struct-unions/ex_union1.c)
+Aqui está um exemplo de como definir e usar uma union em C: [código completo](ex_union1.c)
 
 ```c
 union data {
