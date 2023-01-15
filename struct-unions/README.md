@@ -18,7 +18,7 @@ p1.x = 3;
 p1.y = 4;
 ```
 
-Aqui está um exemplo de como definir e usar uma union em C:
+Aqui está um exemplo de como definir e usar uma union em C: [código completo](struct-unions/ex_union1.c)
 
 ```c
 union data {
@@ -35,6 +35,7 @@ printf("%f\n", u.f);
 strcpy(u.str, "Programação C");
 printf("%s\n", u.str);
 ```
+
 
 Note que neste exemplo, a union "data" tem três tipos diferentes de variáveis, "int", "float" e "char".
 
