@@ -36,7 +36,7 @@ $ gcc meuPrograma.c -o meuPrograma
 
 # Editar seu código
 
-Não é necessário usar um editor de texto puro para escrever código em C. Existem muitos ambientes de desenvolvimento integrado (IDE) que oferecem muitos recursos adicionais que podem tornar o processo de escrever e depurar código em C mais fácil. Alguns exemplos de IDE populares para C são o Microsoft Visual Studio, o Eclipse e o NetBeans.
+Não é necessário usar um editor de texto puro para escrever código em C. Existem muitos ambientes de desenvolvimento integrado (IDE) que oferecem muitos recursos adicionais que podem tornar o processo de escrever e depurar código em C mais fácil. Alguns exemplos de IDE populares para C são o Microsoft Visual Studio, o Eclipse e o NetBeans. Uma opção que não exige a instalação use a IDE online [Replit](https://replit.com/).
 
 No entanto, se você prefere usar um editor de texto puro, existem muitas opções disponíveis. Alguns exemplos de editores de texto puros populares são o Sublime Text, o Visual Studio Code e o Atom. Esses editores oferecem recursos como realce de sintaxe, pesquisa e substituição, e integração com compiladores e ferramentas de depuração.
 
