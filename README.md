@@ -19,7 +19,7 @@ em construção
 * [Ponteiros em C](ponteiros)
 * [Alocação dinâmica de memória em C](aloca-dinamica)
 * [Arquivos em C](arquivos)
-* Structs e unions em C
+* [Structs e unions em C](struct-unions)
 * Programação orientada a objetos em C (usando structs e funções)
 * Bibliotecas em C (criando e usando bibliotecas dinâmicas ou estáticas)
 * Depuração de código em C
