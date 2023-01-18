@@ -48,7 +48,7 @@ int main() {
 ```
 
 Exemplo de implementação de herança:
-
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -108,3 +108,47 @@ int main() {
     printf("Salário: %.2f\n", getSalario(&func1));
     return 0;
 }
+```
+
+Exemplo de implementação de polimorfismo:
+```c
+#include <stdio.h>
+
+typedef struct FormaGeometrica {
+    void (*desenhar)(struct FormaGeometrica*);
+} FormaGeometrica;
+
+typedef struct Quadrado {
+    FormaGeometrica forma;
+    int lado;
+} Quadrado;
+
+typedef struct Circulo {
+    FormaGeometrica forma;
+    int raio;
+} Circulo;
+
+void desenharQuadrado(Quadrado *quadrado) {
+    printf("Desenhando quadrado com lado %d\n", quadrado->lado);
+}
+
+void desenharCirculo(Circulo *circulo) {
+    printf("Desenhando círculo com raio %d\n", circulo->raio);
+}
+
+int main() {
+    Quadrado quadrado;
+    quadrado.lado = 5;
+    quadrado.forma.desenhar = desenharQuadrado;
+    quadrado.forma.desenhar(&quadrado);
+
+    Circulo circulo;
+    circulo.raio = 3;
+    circulo.forma.desenhar = desenharCirculo;
+    circulo.forma.desenhar(&circulo);
+
+    return 0;
+}
+```
+
+Esses são exemplos simples de como é possível implementar a programação orientada a objetos em C, mas é importante lembrar que a complexidade aumenta conforme se aumenta a complexidade do seu projeto. A programação orientada a objetos é uma abordagem poderosa, mas também pode ser difícil de implementar e manter, especialmente em linguagens como C, que não possuem recursos nativos para esse tipo de programação.
