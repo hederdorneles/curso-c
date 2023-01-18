@@ -46,3 +46,65 @@ int main() {
     return 0;
 }
 ```
+
+Exemplo de implementação de herança:
+
+#include <stdio.h>
+#include <string.h>
+
+typedef struct Pessoa {
+    char nome[50];
+    int idade;
+} Pessoa;
+
+typedef struct Funcionario {
+    Pessoa pessoa;
+    char cargo[50];
+    double salario;
+} Funcionario;
+
+void setNome(Pessoa *pessoa, char *nome) {
+    strcpy(pessoa->nome, nome);
+}
+
+void setIdade(Pessoa *pessoa, int idade) {
+    pessoa->idade = idade;
+}
+
+char* getNome(Pessoa *pessoa) {
+    return pessoa->nome;
+}
+
+int getIdade(Pessoa *pessoa) {
+    return pessoa->idade;
+}
+
+void setCargo(Funcionario *funcionario, char *cargo) {
+    strcpy(funcionario->cargo, cargo);
+}
+
+void setSalario(Funcionario *funcionario, double salario) {
+    funcionario->salario = salario;
+}
+
+char* getCargo(Funcionario *funcionario) {
+    return funcionario->cargo;
+}
+
+double getSalario(Funcionario *funcionario) {
+    return funcionario->salario;
+}
+
+int main() {
+    Funcionario func1;
+    setNome(&(func1.pessoa), "João");
+    setIdade(&(func1.pessoa), 30);
+    setCargo(&func1, "Gerente");
+    setSalario(&func1, 5000);
+
+    printf("Nome: %s\n", getNome(&(func1.pessoa)));
+    printf("Idade: %d\n", getIdade(&(func1.pessoa)));
+    printf("Cargo: %s\n", getCargo(&func1));
+    printf("Salário: %.2f\n", getSalario(&func1));
+    return 0;
+}
