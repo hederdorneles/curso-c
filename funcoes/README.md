@@ -30,6 +30,7 @@ void imprime_mensagem() {
 }
 ```
 
+
 ## Passagem de valor, argumentos
 
 Um dos aspectos das funções em C, é que todas os argumentos são passados por "valor". Isso significa que em uma chamada de função, os argumentos são passados em variáveis temporárias ao invés das originais. A chamada de função em C não pode alterar diretamente as variáveis em uma chamada de função.
@@ -128,3 +129,38 @@ int main() {
 Neste exemplo, temos três funções diferentes: func1, func2 e func3. Cada uma dessas funções recebe um inteiro e retorna um inteiro, mas realizam operações diferentes. O ponteiro para função é utilizado para armazenar o endereço das funções e chama-las de forma dinâmica. Isso permite que o programa seja mais flexível, pois a operação a ser realizada pode ser alterada dinamicamente, sem precisar modificar o código fonte.
 
 Este exemplo ilustra como os ponteiros para função podem ser usados para permitir a flexibilidade e reutilização de código.
+
+## Funções variádicas
+
+No C, é possível criar funções que aceitam um número variável de argumentos usando o operador "..." (três pontos). Essas funções são conhecidas como funções variádicas, e elas permitem que você escreva código que pode lidar com um número desconhecido de argumentos.
+
+Para criar uma função variádica, você usa o operador "..." no lugar do último parâmetro da função. Por exemplo, aqui está uma função chamada "soma" que calcula a soma de um número variável de inteiros:
+```c
+#include <stdio.h>
+#include <stdarg.h>
+
+int soma(int count, ...) {
+    int result = 0;
+    va_list args;
+    va_start(args, count);
+    for (int i = 0; i < count; i++) {
+        result += va_arg(args, int);
+    }
+    va_end(args);
+    return result;
+}
+```
+
+No exemplo acima, a função "soma" tem dois parâmetros, o primeiro é o número de argumentos que serão passados para a função e o segundo é o operador "...". Dentro da função, usamos as funções da biblioteca stdarg.h para trabalhar com os argumentos variáveis. A função va_start() é usada para inicializar um ponteiro para os argumentos variáveis. A função va_arg() é usada para recuperar cada argumento, um por um. E finalmente, a função va_end() é usada para limpar o ponteiro de argumentos variáveis.
+
+Aqui está um exemplo de como usar a função "soma":
+```c
+int main() {
+    printf("Soma: %d\n", soma(3, 1, 2, 3));
+    return 0;
+}
+```
+
+Neste exemplo, a função soma é chamada com três argumentos, 1, 2 e 3 e imprime "Soma: 6" na tela.
+
+É importante notar que, como as funções variadicas não possuem informações de tipo de seus argumentos, é necessário informar o tipo de cada argumento manualmente, ou usar funções específicas para cada tipo. E também é importante ter atenção com a ordem de chamada de va_start, va_arg e va_end para evitar possíveis erros.
