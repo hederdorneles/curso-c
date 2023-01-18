@@ -67,3 +67,24 @@ int main() {
 No exemplo acima, a função incrementa recebe o endereço de memória de a e incrementa o valor de a diretamente. Dessa forma, o valor de a na função main é alterado para 11.
 
 A passagem de argumentos por valor ou por referência é uma questão importante em C, pois afeta a forma como a função pode alterar os valores dos argumentos e o que é retornado para o chamador. É importante escolher a forma mais adequada para cada situação, de acordo com as necessidades do programa. Mais aprofundamento sobre passagem de valor por referência se faz necessário o estudo de ponteiros.
+
+## Ponteiro para funções
+
+Os ponteiros para função são uma forma de trabalhar com funções em C, permitindo que você armazene o endereço de uma função em uma variável e chame essa função através desse ponteiro.
+
+Um ponteiro para função é declarado como um ponteiro para um tipo de função específico. Por exemplo, se você tem uma função chamada "soma" que recebe dois inteiros e retorna um inteiro, você pode declarar um ponteiro para essa função da seguinte maneira:
+```c
+int (*ponteiroSoma)(int, int);
+```
+
+Para atribuir uma função a um ponteiro, você pode usar o operador de endereço (&) na função:
+```c
+ponteiroSoma = &soma;
+```
+
+Para chamar uma função através de um ponteiro, você usa o operador de desreferenciação (*) antes do nome do ponteiro:
+```c
+resultado = (*ponteiroSoma)(10, 20);
+```
+
+Os ponteiros para função também podem ser usados como argumentos para outras funções e como campos de structs, permitindo flexibilidade e reutilização de código. É importante lembrar de que os ponteiros para funções devem ser inicializados antes de serem usados.
