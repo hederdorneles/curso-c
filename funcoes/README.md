@@ -88,3 +88,43 @@ resultado = (*ponteiroSoma)(10, 20);
 ```
 
 Os ponteiros para função também podem ser usados como argumentos para outras funções e como campos de structs, permitindo flexibilidade e reutilização de código. É importante lembrar de que os ponteiros para funções devem ser inicializados antes de serem usados.
+
+Aqui está um exemplo de como os ponteiros para função:
+```c
+#include <stdio.h>
+
+int func1(int x) {
+    return x*x;
+}
+
+int func2(int x) {
+    return x*x*x;
+}
+
+int func3(int x) {
+    return x*x*x*x;
+}
+
+int main() {
+    int x;
+    int (*ponteiroFunc)(int); // Declaração do ponteiro para função
+
+    printf("Entre com um valor para x: ");
+    scanf("%d", &x);
+
+    // Atribuindo funções ao ponteiro
+    ponteiroFunc = func1;
+    printf("%d^2 = %d\n", x, ponteiroFunc(x));
+
+    ponteiroFunc = func2;
+    printf("%d^3 = %d\n", x, ponteiroFunc(x));
+
+    ponteiroFunc = func3;
+    printf("%d^4 = %d\n", x, ponteiroFunc(x));
+
+    return 0;
+}
+```
+Neste exemplo, temos três funções diferentes: func1, func2 e func3. Cada uma dessas funções recebe um inteiro e retorna um inteiro, mas realizam operações diferentes. O ponteiro para função é utilizado para armazenar o endereço das funções e chama-las de forma dinâmica. Isso permite que o programa seja mais flexível, pois a operação a ser realizada pode ser alterada dinamicamente, sem precisar modificar o código fonte.
+
+Este exemplo ilustra como os ponteiros para função podem ser usados para permitir a flexibilidade e reutilização de código.
